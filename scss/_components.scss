@@ -1,0 +1,35 @@
+.btn {
+    border-radius: 12rem;
+    background-color: var(--neutral-100);
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.9rem 3.1rem;
+    color: var(--white);
+}
+
+.btn-primary {
+    background-color: var(--white);
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: -0.032rem;
+    font-size: 1.6rem;
+    padding: 1.3rem 7.5rem;
+}
+
+.icons {
+    display: flex;
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1.6rem;
+        li {
+            width: 3.6rem;
+            height: 3.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 1px solid var(--neutral-300);
+        }
+    }
+}
