@@ -18,6 +18,13 @@
     letter-spacing: -0.032rem;
     font-size: 1.6rem;
     padding: 1.3rem 7.5rem;
+    font-weight: 700;
+    border-radius: 12rem;
+    letter-spacing: -0.032rem;
+    transition: filter .3s ease;
+    &:hover {
+        filter: brightness(0.9);
+    }
 }
 
 .icons {
