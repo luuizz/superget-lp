@@ -1,0 +1,72 @@
+header {
+    padding: 1.4rem 0;
+    height: 6.4rem;
+    background-color: var(--white);
+    .container {
+        display: flex;
+        align-items: center;
+        .logo {
+            width: 100%;
+            max-width: 13.3rem;
+            margin-right: 8rem;
+        }
+        nav {
+            display: flex;
+            gap: 9.2rem;
+            .left, .right {
+                display: flex;
+                align-items: center;
+                li {
+                    &:not(:last-child) {
+                        margin-right: 3.6rem;
+                    }
+                    a {
+                        font-size: 1.3rem;
+                        color: var(--neutral-200);
+                        letter-spacing: -0.026rem;
+                        transition: filter .3s ease;
+                        &:hover {
+                            filter: brightness(0.2);
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+                        &::after {
+                            content: "";
+                            display: block;
+                            width: 0;
+                            height: 0.1rem;
+                            background-color: var(--neutral-200);
+                            transition: all .5s ease;
+                            position: relative;
+                            top: 0.5rem;
+                        }
+                    }
+                }
+            }
+            .left {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 0.3rem;
+                    height: 1.5rem;
+                    background: url("../../images/dots-nav.svg") no-repeat center center;
+                    background-size: cover;
+                    top: 0.3rem;
+                    right: -4.5rem;
+                    z-index: 20;
+                }
+            }
+            .right {
+                margin-right: 7.4rem;
+            }
+        }
+        .buyer {
+            display: flex;
+            .btn {
+                margin-right: 3.1rem;
+            }
+        }
+    }
+}
