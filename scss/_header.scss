@@ -2,6 +2,18 @@ header {
     padding: 1.4rem 0;
     height: 6.4rem;
     background-color: var(--white);
+    border-bottom: 1px solid rgb(240, 240, 240);
+    .menu-mobile {
+        position: absolute;
+        width: 100%;
+        top: 6.4rem;
+        height: calc(100vh - 6.4rem);
+        opacity: 0;
+        transition: all .3s ease;
+        padding: 4rem 1.5rem;
+        background-color: var(--white);
+        transform: translateY(100%);
+    }
     .container {
         display: flex;
         align-items: center;
@@ -67,6 +79,109 @@ header {
             .btn {
                 margin-right: 3.1rem;
             }
+            .hamburger {
+                display: none;
+            }
+        }
+    }
+    @include responsive (1230px) {
+        .container {
+            .logo {
+                margin-right: 4rem;
+            }
+            nav {
+                .left, .right {
+                    li {
+                        &:not(:last-child) {
+                            margin-right: 2.6rem;
+                        }
+                    }
+                }
+                .right {
+                    margin-right: 4rem;
+                }
+            }
+        }
+    }
+    @include responsive (1120px) {
+        .container {
+            .logo {
+                margin-right: 2rem;
+            }
+            nav {
+                gap: 2.6rem;
+                .left {
+                    &::after {
+                        display: none;
+                    }
+                }
+                .right {
+                    margin-right: 3rem;
+                }
+            }
+        }
+    }
+    @include responsive (1023px) {
+        .container {
+            justify-content: space-between;
+            nav {
+                display: none;
+            }
+            .buyer {
+                .hamburger {
+                    display: block;
+                    margin-left: 2rem;
+                    padding: 0;
+                    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+                        height: 0.2rem;
+                        background-color: var(--neutral-100);
+                    }
+                }
+            }
+        }
+        .menu-mobile {
+            ul {
+                li {
+                    font-size: 2.4rem;
+                    &:not(:last-child) {
+                        margin-bottom: 2rem;
+                    }
+                    a {
+                        color: var(--neutral-200);
+                    }
+                }
+            }
+            .btn {
+                display: none;
+            }
+        }
+    }
+    @include responsive (560px) {
+        .container {
+            .buyer {
+                .btn {
+                    display: none;
+                }
+            }
+        }
+        .menu-mobile {
+            ul {
+                margin-bottom: 4rem;
+            }
+            .btn {
+                display: block;
+                font-size: 2rem;
+                line-height: 4rem;
+            }
+        }
+    }
+}
+
+.menu-opened {
+    header {
+        .menu-mobile {
+            transform: translateY(0%);
+            opacity: 1;
         }
     }
 }

@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/hamburguer.css">
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Superget - Lading Page</title>
 </head>
@@ -58,11 +59,39 @@
                         </li>
                     </ul>
                 </div>
+                <button id="js-btn-menu" class="hamburger hamburger--elastic" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </div>
+        </div>
+        <div class="menu-mobile">
+            <ul>
+                <li>
+                    <a href="#">Maquininha</a>
+                </li>
+                <li>
+                    <a href="#">App Getnet</a>
+                </li>
+                <li>
+                    <a href="#">Cartão SuperGet</a>
+                </li>
+                <li>
+                    <a href="#">Ajuda</a>
+                </li>
+                <li>
+                    <a href="#">Quero Alugar</a>
+                </li>
+                <li>
+                    <a href="#">Cadastro</a>
+                </li>
+            </ul>
+            <button class="btn">Pedir maquinha</button>
         </div>
     </header>
     <main>
-        <section class="s-hero">
+        <section class="s-hero none">
             <div class="container">
                 <div class="left-area">
                     <div class="price">
@@ -123,7 +152,7 @@
             </div>
         </section>
 
-        <section class="s-features">
+        <section class="s-features none">
             <div class="container">
                 <div class="left">
                     <h2>2%</h2>
@@ -154,5 +183,7 @@
             </div>
         </section>
     </main>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
