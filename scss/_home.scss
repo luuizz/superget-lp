@@ -403,6 +403,17 @@
             }
         }
     }
+    @include responsive (460px) {
+        .container {
+            .right-area {
+                .image {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .s-features {
@@ -511,6 +522,94 @@
                         }
                         &:hover {
                             filter: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsive (1130px) {
+        padding: 5rem 0;
+        .container {
+            .left {
+                margin-right: 10.9rem;
+                max-width: 14.2rem
+            }
+            .right-side {
+                .icons {
+                    ul {
+                        li {
+                            &:not(:last-child) {
+                                margin-right: 5.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsive (991px) {
+        .container {
+            .right-side {
+                span {
+                    margin-right: 0.9rem;
+                }
+            }
+        }
+    }
+    @include responsive (768px) {
+        .container {
+            flex-direction: column;
+            .left {
+                margin-right: 0;
+                h2 {
+                    text-align: center;
+                }
+                p {
+                    text-align: center;
+                }
+                span {
+                    text-align: center;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+            .right-side {
+                flex-direction: column;
+                span {
+                    margin: 3.2rem 0 2.4rem;
+                }
+                .icons {
+                    width: 100%;
+                    max-width: 100%;
+                    justify-content: center;
+                    ul {
+                        li {
+                            &:not(:last-child) {
+                                margin-right: 12.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsive (560px) {
+        .container {
+            .right-side {
+                .icons {
+                    ul {
+                        flex-direction: column;
+                        align-items: center;
+                        li {
+                            &::after {
+                                display: none;
+                            }
+                            &:not(:last-child) {
+                                margin-right: 0;
+                                margin-bottom: 2.4rem;
+                            }
                         }
                     }
                 }

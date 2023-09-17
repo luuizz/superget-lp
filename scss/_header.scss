@@ -14,7 +14,6 @@ header {
         background-color: var(--white);
         transform: translateY(100%);
         z-index: 2023;
-        display: none;
     }
     .container {
         display: flex;
@@ -184,7 +183,6 @@ header {
         .menu-mobile {
             transform: translateY(0%);
             opacity: 1;
-            display: block;
         }
     }
 }
