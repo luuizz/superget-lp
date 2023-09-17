@@ -231,6 +231,178 @@
             }
         }
     }
+    @include responsive (1200px) {
+        padding-top: 6.1rem;
+        .container {
+            .left-area {
+                max-width: 57rem;
+                .cta {
+                    button {
+                        margin-right: 2.9rem;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive (1130px) {
+        padding-top: 4.1rem;
+        .container {
+            .left-area {
+                max-width: 57rem;
+                .cta {
+                    button {
+                        margin-right: 2.9rem;
+                    }
+                }
+            }
+            .right-area {
+                .image {
+                    margin-right: 4.8rem;
+                    max-width: 24.4rem;
+                    &::before {
+                    width: 22.6119rem;
+                    height: 38.8607rem;
+                    }
+                }
+                .infos {
+                    &>div {
+                        margin-top: 8.1rem;
+                        .bg-detail {
+                            height: 20.6rem;
+                            bottom: -5.1rem
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsive (1070px) {
+        .container {
+            .left-area {
+                max-width: 50rem;
+                .cta {
+                    flex-wrap: wrap;
+                    button {
+                        margin-bottom: 2.6rem;
+                    }
+                }
+            }
+            .right-area {
+                .infos {
+                    &>div {
+                        .bg-detail {
+                            height: 18.6rem;
+                            bottom: -2.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsive (1024px) {
+        height: 85.8rem;
+        .container {
+            flex-direction: column;
+            .left-area {
+                max-width: 100%;
+                .price {
+                    align-items: center;
+                    img {
+                        margin-bottom: 1.6rem;
+                    }
+                }
+                .cta {
+                    justify-content: center;
+                    button {
+                        margin-bottom: 0;
+                    }
+                }
+                p {
+                    text-align: center;
+                }
+            }
+            .right-area {
+                max-width: 100%;
+                width: 100%;
+                justify-content: center;
+                align-items: flex-start;
+                margin-top: 8rem;
+                flex-direction: row;
+                .image {
+                    margin-right: 14.1rem;
+                }
+                .infos {
+                    align-items: flex-start;
+                    p {
+                        width: 100%;
+                    }
+                    ul {
+                        max-width: 27.2rem;
+                    }
+                    & > div {
+                        margin-top: 3.1rem;
+                        ul {
+                            li {
+                                max-width: 19.6rem;
+                            }
+                        }
+                        .bg-detail {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsive (768px) {
+        .container {
+            .right-area {
+                .image {
+                    margin-right: 7.1rem;
+                    .badge {
+                        left: -1.8rem;
+                    }
+                }
+                .infos {
+                    & > div {
+                        ul {
+                            li {
+                                p {
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsive (560px) {
+        height: 92.8rem;
+        .container {
+            .left-area {
+                .cta {
+                    ul {
+                        margin-top: 2.4rem;
+                    }
+                }
+                .price {
+                    h1 {
+                        text-align: center;
+                    }
+                }
+            }
+            .right-area {
+                .image {
+                    margin-right: 5.1rem;
+                    .badge {
+                        top: -2.1rem;
+                        left: -0.8rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .s-features {

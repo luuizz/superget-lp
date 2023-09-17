@@ -5,6 +5,9 @@ h1, h2 {
 
 h1 {
     font-size: 7.2rem;
+    @include responsive (1170px) {
+        font-size: 5.2rem;
+    }
 }
 
 h2 {
